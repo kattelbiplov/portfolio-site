@@ -1,0 +1,82 @@
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-section {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+}
+
+.article-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.article-box:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.article-title {
+    padding: 20px;
+    background-color: #05433E;
+}
+
+.article-title h5 {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.article-content {
+    padding: 0 20px 20px;
+    background-color: #05433E;
+    color: white;
+}
+
+.article-content p {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.article-link {
+    padding: 0 20px 20px;
+    background-color: #05433E;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.article-box::after,
+.article-box::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 6px; /* Adjust the border thickness as needed */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transition: width 0.3s; /* Apply transition for smooth animation */
+}
+
+.article-box:hover::before,
+.article-box:hover::after {
+    width: 100%;
+    background-color: #FFDE00; /* Adjust the border color as needed */
+}

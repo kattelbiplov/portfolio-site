@@ -1,0 +1,24 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 3rem 0 3rem 0;
+  --mdb-navbar-box-shadow: none;
+}
+
+.navbar-list ul{
+  list-style: none;
+}
+
+.navbar-list ul li{
+  display: inline-block;
+  padding-right: 2.7rem;
+  font-family: 'Rubik' sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  flex-wrap: wrap;
+  align-items: center; /* Center items vertically */
+  justify-content:space-between !important;
+}

@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left,
+.about-right {
+    flex: 1;
+    margin: 20px; /* Add margin to all sides to create space */
+}
+
+.about-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-right {
+    padding: 0 20px;
+    /* Add padding to the content for better readability */
+}
+
+/* Adjust styles as needed */
+.about h2 {
+    font-size: 29px;
+    color: #fac322;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.about h3 span {
+    color: #fac322;
+    font-size: 52px;
+    font-family: 'Rubik' sans-serif;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 16px;
+    color: #afb4b9;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.about-right-list ul {
+    padding: 0;
+}
+
+.about-right-list ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #afb4b9;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+}
+
+.about-right button {
+    font-size: 22px;
+    background: #fac322;
+    color: #222222;
+    padding: 14px 45px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Rubik' sans-serif;
+}
+
+.about-right button:hover {
+    background-color: #05433E;
+    color: white;
+    border: 2px solid #fac322;
+}
+.about-down{
+    margin-top: 50px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF33;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.09);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 40px;
+}
+.about-down-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-down-inner-list {
+    flex: 1;
+    margin-right: 10rem; /* Add margin to create space between inner lists */
+}
+
+.about-down-inner-list:last-child {
+    margin-right: 0; /* Remove margin from the last inner list */
+}
+.about-down-inner-list h2{
+    color: #fff;
+    font-size: 16px;
+    margin: 0 0 22px 0;
+}
+
+.about-down-inner-list p{
+    color: #afb4b9;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+}.about-down-inner-list ul{
+    padding: 0;
+    margin: 0;
+}
+
+.about-down-inner-list ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px; 
+    padding-right: 15px;
+    font-size: 26px;
+    color: #FFDE00;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .about-left img {
+        max-width: 80%;
+    }
+
+    .about-right {
+        padding: 0;
+    }
+
+    .about-right h2,
+    .about-right h3 {
+        text-align: center;
+    }
+
+    .about-right button {
+        margin: 20px auto;
+    }
+
+    .about-right-list ul {
+        text-align: left;
+    }
+    
+    .about-contact-inner {
+        flex-direction: column;
+    }
+
+    .about-contact-item {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

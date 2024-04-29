@@ -1,0 +1,18 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 3rem 0 3rem 0;
+}
+
+.footer-list ul{
+  list-style: none;
+}
+
+.footer-list ul li{
+  display: inline-block;
+  padding-right: 2.7rem;
+  font-family: 'Rubik' sans-serif;
+  font-weight: 700;
+}
+
